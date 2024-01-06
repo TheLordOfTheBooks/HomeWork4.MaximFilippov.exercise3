@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void go(View view) {
         n+=1;
-        bn.setText("This is a click number:"+ n);
+        if (n!=6)
+            bn.setText("This is a click number:"+ n);
+        else
+            n=0;
     }
 }
